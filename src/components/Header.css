@@ -1,0 +1,86 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .inputField {
+    width: 40% !important;
+    padding: 1px;
+    margin-top: 5px;
+    margin-right: 6px;
+    border: none;
+    font-size: 17px;
+  }
+
+  .header-right {
+    display: flex;
+  }
+  
+  .header-right p {
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+    color: #fff; /* Set default text color to white */
+  }
+  
+  .header-right p::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .inputField{
+    width: 60% !important;
+    padding: 1px;
+    margin-top: 5px;
+    margin-right: 6px;
+    border: none;
+    font-size: 17px;
+  }
+
+  .header-right p:hover {
+    color: #ffd700; /* Hover color remains golden */
+  }
+  
+  .header-right p:hover::before {
+    background-color: #ffd700; /* Hover underline color remains golden */
+  }
+  
+  .active {
+    font-weight: bold;
+    color: #ffd700; /* Active tab text color remains golden */
+  }
+  
+  .active::before {
+    background-color: #ffd700; /* Active tab underline color remains golden */
+  }
+  
+  /* Style for selected (active) box */
+  .active-golden {
+    color: #ffd700 !important; /* Golden color for selected tab */
+  }
+
+  .Header img {
+    max-width: 100px;
+    height: auto;
+  }
+  
